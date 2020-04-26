@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './components/index.css';
-import './components/App.css';
+import './styles/index.css';
+import './styles/App.css';
 
 function HelloApp() {
   return (
     <div className="App">
-      <h1>This is like the greatest app that can be built</h1>
+      <h1>This is like the greatest app world has ever seen</h1>
     </div>
   );
 }
