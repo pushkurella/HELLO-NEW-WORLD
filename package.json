@@ -1,7 +1,7 @@
 {
   "name": "@pushpakkurella/hello-new-world",
   "access": "public",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -15,8 +15,7 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "publish": "npm publish --access public"
+    "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
