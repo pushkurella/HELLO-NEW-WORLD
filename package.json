@@ -1,8 +1,15 @@
 {
   "name": "@pushpakkurella/hello-new-world",
   "access": "public",
-  "version": "0.1.1",
+  "version": "0.1.2",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/runtime": "^7.9.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -12,7 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rimraf dist && NODE_ENV=production babel src --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -30,5 +37,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.9.4",
+    "@babel/cli": "^7.2.3",
+    "babel-preset-react-app": "^7.0.1",
+    "rimraf": "^2.6.3"
   }
 }
